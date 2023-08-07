@@ -1,0 +1,68 @@
+.loginWrapper {
+    display: flex;
+    justify-content: space-around;
+
+    &--right-side{
+        width: calc(20%);
+
+        .inputGroup{
+            .inputWrapper:nth-child(1) {
+                margin-bottom: 20px;
+            }
+
+            a {
+                display: flex;
+                justify-content: end;
+                margin-top: 10px;
+
+            }
+
+            margin-bottom: 30px;
+        }
+
+        .font12-grey {
+            &--continue-with {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        .socmedWrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            button {
+                padding: 0;
+                border: none;
+                background: none;
+                width: 50px;
+            }
+
+            button {
+                width: 30px;
+                cursor: pointer;
+            }
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+        .register-here {
+            text-decoration: underline;
+            color: $blue-light;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .font-12 {
+            &.--bold {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

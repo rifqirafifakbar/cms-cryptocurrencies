@@ -1,0 +1,40 @@
+#root {
+    @import './default/variables';
+    @import './default/mixins';
+    @import './default/fonts';
+    @import './default/container';
+    @import './default/mixins';
+
+    // components
+    @import './components/input';
+    @import './components/button';
+
+    //pages
+    @import './pages/login';
+
+    font-family: $primaryfont;
+    font-size: $font-16;
+
+
+    .font12-grey{
+        font-size: $font-12;
+        font-weight: $normal;
+        color: $color-grey-border;
+    }
+
+    .font-12 {
+        font-size: $font-12;
+        
+        &.--bold{
+            font-weight: $bold;
+            
+        }
+    }
+
+    .title-bold{
+        font-size: $font-24;
+        font-weight: $bold;
+        margin-bottom: 20px;
+        display: block;
+    }
+}

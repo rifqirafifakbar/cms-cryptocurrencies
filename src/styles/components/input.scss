@@ -1,0 +1,19 @@
+input {
+  padding: 16px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: solid 0.05rem $color-grey-border;
+  width: 100%;
+
+  font-family: $primaryfont;
+  font-size: $font-16;
+  &:focus {
+    outline: 0.1rem solid $blue-light;
+  }
+
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color-black;
+    opacity: 0.6; /* Firefox */
+    font-size: $font-16;
+  }
+}

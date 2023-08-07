@@ -1,0 +1,39 @@
+button {
+  
+  .btn{
+
+    &:hover {
+      background-color: red;
+      .btn {
+  
+      }
+    }
+  }
+  
+}
+
+
+.btn {
+  padding: 15px 60px;
+  color: $color-white;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: $primary;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 3px 3px 23px 1px rgba(62,118,255,0.74);
+  border: none;
+  
+  &:hover {
+    background-color: #3534fa;
+    box-shadow: 3px 3px 23px 1px rgba(53,52,250,0.74);
+  }
+
+  @include md {
+    padding: 15px;
+  }
+
+  
+}
+

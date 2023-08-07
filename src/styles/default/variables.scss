@@ -1,0 +1,87 @@
+// Fonts
+$base: 16;
+
+$font-12: 12px;
+$font-16: 16px;
+$font-24: 24px;
+$font-32: 32px;
+
+
+$normal: 400;
+$medium: 500;
+$semi-bold: 600;
+
+$thin: 300;
+$bold: 700;
+$ultra-bold: 900;
+
+// fixed variable
+$blue-light: #3e76ff;
+$primaryfont: 'Poppins', sans-serif;
+
+
+
+$color-green: #00838f;
+$color-white: #ffffff;
+$color-grey: #b8b8b8;
+$color-grey-link: #767676;
+$color-grey-border: #d0d0d0;
+$color-black: #4d4d4d;
+$color-blue: #1b375e;
+
+$color-purple: #6339b0;
+$color-teal: #4895ff;
+$color-grey-2: #5f3232;
+
+$primary: $blue-light;
+
+$color-default: $color-black;
+
+
+$remixicon: 'remixicon';
+
+$gutter: 32px;
+$gap: 76px;
+$gap-mobile: 10px;
+
+$cubic-1: cubic-bezier(0.215, 0.61, 0.355, 1);
+$cubic-2: cubic-bezier(0.4, 0.96, 0.49, 1.11);
+
+
+$breakpoints: (
+  'xs': 575px,
+  'sm': 767px,
+  'md': 991px,
+  'lg': 1199px,
+  'xl': 1399px,
+);
+
+$padding: (
+  'p': 'padding',
+  'pt': 'padding-top',
+  'pr': 'padding-right',
+  'pb': 'padding-bottom',
+  'pl': 'padding-left',
+);
+
+$aligns: (
+  'start': flex-start,
+  'end': flex-end,
+  'center': center,
+  'stretch': stretch,
+);
+
+$grid-aligns: (
+  'start': start,
+  'end': end,
+  'center': center,
+  'stretch': stretch,
+);
+
+$justifies: (
+  'start': flex-start,
+  'end': flex-end,
+  'center': center,
+  'around': space-around,
+  'between': space-between,
+);
