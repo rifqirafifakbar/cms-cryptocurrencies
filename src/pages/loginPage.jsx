@@ -1,12 +1,12 @@
-import { Button } from '../components/button/button'
-import { Input } from '../components/input/input'
+import { Button } from '../components/atoms/button/button'
+import { Input } from '../components/atoms/input/input'
 
 export const LoginPage = () => {
     return (
         <>
             <div className="container-fluid">
                 <div className="header">
-                    <img src={require('../img/logo.PNG')} alt={'icon logo'}/>
+                    <img src={require('../img/logo.png')} alt={'icon logo'}/>
                 </div>
             </div>
 
