@@ -36,13 +36,16 @@ export const DashboardLeft = (props) => {
                     <div className='description'>
                     </div>
                         <div className='asking-square'>?</div>
-                        <span>Need Help?</span>
-                        <span>Please reach on</span>
+                        <span className='description_need_help'>Need Help?</span>
+                        <span className='description_reach'>Please reach on</span>
                         <Button 
-                            classProps="btn-login"
+                            classProps="btn-details"
                             label="Details"
-
                         />
+                </div>
+
+                <div className='asking-square-mobile'>
+                    <div className='asking-square'>?</div>
                 </div>
             </div>
         </>

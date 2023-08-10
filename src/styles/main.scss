@@ -30,6 +30,10 @@
             font-weight: $bold;
             
         }
+
+        &_thin {
+            font-weight: $normal;
+        }
     }
 
     .title-bold{
@@ -40,10 +44,15 @@
     }
 
     .font-16{
-
+        font-size: $font-16;
         &_normal {
             font-size: $font-16;
             font-weight: $normal;
+        }
+
+        &_bold {
+            font-size: $font-16;
+            font-weight: $bold;
         }
     }
 }
