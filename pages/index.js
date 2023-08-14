@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import Image from 'next/image'
+import Image from "next/image";
 import { Button } from "../src/components/atoms/button/button";
 import { Input } from "../src/components/atoms/input/input";
 import logo_baner from "../src/img/logo.png";
