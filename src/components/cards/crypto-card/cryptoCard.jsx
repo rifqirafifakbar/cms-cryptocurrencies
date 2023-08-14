@@ -1,5 +1,3 @@
-import 'boxicons';
-
 export const CryptoCard = props => {
     return (
         <>

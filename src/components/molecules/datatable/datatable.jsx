@@ -3,6 +3,7 @@ import { Column } from 'primereact/column';
 import { useEffect, useState } from 'react';
 import { fetchData } from '../../../services';
 import { InputText } from 'primereact/inputtext';
+import Image from 'next/image'
 
 export const DataTableApp = (props) => {
     const [products, setProducts] = useState([]);
@@ -20,7 +21,7 @@ export const DataTableApp = (props) => {
     };
 
     const imageBodyTemplate = (product) => {
-        return <img src={product.image} alt={product.image} className="crypto_image" />;
+        return <Image src={product.image} alt={product.image} className="crypto_image" width="50" height="50" />;
     };
 
     const onGlobalFilterChange = (e) => {

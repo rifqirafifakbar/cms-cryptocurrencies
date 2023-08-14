@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { CryptoCard } from "../components/cards/crypto-card/cryptoCard"
 import { ProfileCard } from "../components/cards/profile-card/profileCard"
 import { DashboardLeft } from "../components/organisms/dashboard-left/dashboardLeft"
 
-import 'boxicons';
 import { DashboardRight } from "../components/organisms/dashboard-right/dashboardRight";
 
 export const DashboardApp = () => {

@@ -1,8 +1,9 @@
-import 'boxicons';
+// import 'boxicons';
 import { useEffect } from 'react';
 import { Button } from '../../atoms/button/button';
 import logo_full from '../../../img/logo.png'
 import logo_mobile from '../../../img/icon_logo.png'
+import Image from 'next/image'
 
 export const DashboardLeft = (props) => {
 
@@ -10,8 +11,8 @@ export const DashboardLeft = (props) => {
         <>
             <div className={props.isClose ? `sidebar close` : 'sidebar'}>
                 <div className="logo-details">
-                    <img src={logo_full} alt={'icon logo'} className='logo_full'/>
-                    <img src={logo_mobile} alt={'icon close'} className='logo_close'/>
+                    <Image src={logo_full} alt={'icon logo'} className='logo_full'/>
+                    <Image src={logo_mobile} alt={'icon close'} className='logo_close'/>
                 </div>
 
                 <ul className="nav-links">
@@ -30,9 +31,6 @@ export const DashboardLeft = (props) => {
                         </a>
                     </li>
                 </ul>
-
-
-
 
                 <div className='box-sidebar'>
                     <div className='description'>

@@ -5,13 +5,14 @@ import banner_1 from '../img/banner_1.PNG'
 import facebook_logo from '../img/icons/facebook.PNG'
 import apple_logo from '../img/icons/apple.PNG'
 import google_logo from '../img/icons/google.PNG'
+import Image from 'next/image'
 
 export const LoginPage = () => {
     return (
         <>
             <div className="container-fluid">
                 <div className="header">
-                    <img src={logo_baner} alt={'icon logo'}/>
+                    <Image src={logo_baner} alt={'icon logo'}/>
                 </div>
             </div>
 
@@ -21,7 +22,7 @@ export const LoginPage = () => {
                 <div className='container'>
                     <div className='loginWrapper'>
                         <div className='loginWrapper--left-side'>
-                            <img src={banner_1} alt={'icon logo'}/>
+                            <Image src={banner_1} alt={'icon logo'}/>
                         </div>
                         <div className='loginWrapper--right-side'>
                             <span className='title-bold'>Sign in</span>
@@ -54,13 +55,13 @@ export const LoginPage = () => {
                             <span className='font12-grey font12-grey--continue-with'>or continue with</span>
                             <div className='socmedWrapper'>
                                 <button>
-                                    <img src={facebook_logo} alt={'facebook'}/>
+                                    <Image src={facebook_logo} alt={'facebook'}/>
                                 </button>
                                 <button>
-                                    <img src={apple_logo} alt={'apple'}/>
+                                    <Image src={apple_logo} alt={'apple'}/>
                                 </button>
                                 <button>
-                                    <img src={google_logo} alt={'google'}/>
+                                    <Image src={google_logo} alt={'google'}/>
                                 </button>
                             </div>
 

@@ -1,6 +1,7 @@
 import { CryptoCard } from '../../cards/crypto-card/cryptoCard'
 import { DataTableApp } from '../../molecules/datatable/datatable'
 import image_user from '../../../img/icons/user.png'
+import Image from 'next/image'
 
 export const DashboardRight = props => {
 
@@ -9,6 +10,7 @@ export const DashboardRight = props => {
             <div className="home-content">
                 <button className={props.isClose ? `button-burger` : `button-burger slide`} onClick={()=> props.setIsClose(!props.isClose)}>
                     <box-icon size="sm" name='menu' color={props.isClose ? '#3e76ff':"white"}></box-icon>
+                    
                 </button>
                 
                 <div className="breadcumb">
@@ -23,7 +25,7 @@ export const DashboardRight = props => {
                     </div>
                     <div className="breadcumb-right">
                         <div className="profile">
-                            <img src={image_user} alt={'user'} className='profile_user'/>
+                            <Image src={image_user} alt={'user'} className='profile_user'/>
                             <span className="font-16_normal">James</span>
                             <box-icon name='chevron-down' ></box-icon>
                             <box-icon name='bell' type='solid' ></box-icon>
@@ -35,7 +37,7 @@ export const DashboardRight = props => {
 
             </div>
             <div className='profile-section'>
-                <img src={image_user} alt={'user'} className='profile_user'/>
+                <Image src={image_user} alt={'user'} className='profile_user'/>
                 <div className='profile-description'>
                     <span className='font-16_bold'>James Warden</span>
                     <span className='font-12font-16_bold'>Admin - Company A</span>

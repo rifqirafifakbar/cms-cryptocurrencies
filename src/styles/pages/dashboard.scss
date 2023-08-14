@@ -50,6 +50,7 @@
         .profile_user {
           width: 25%;
           margin-right: 10px;
+          height: 30%;
         }
 
         span {
@@ -417,9 +418,9 @@
     box-shadow: $box-shadow;
     border-radius: 15px;
 
-    .crypto_image {
-      width: 10%;
-    }
+    // .crypto_image {
+    //   width: 10%;
+    // }
 
     .header {
       display: flex;
