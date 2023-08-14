@@ -1,6 +1,4 @@
-import { useState,useEffect } from "react";
-import { CryptoCard } from "../components/cards/crypto-card/cryptoCard"
-import { ProfileCard } from "../components/cards/profile-card/profileCard"
+import { useState } from "react";
 import { DashboardLeft } from "../components/organisms/dashboard-left/dashboardLeft"
 
 import { DashboardRight } from "../components/organisms/dashboard-right/dashboardRight";
