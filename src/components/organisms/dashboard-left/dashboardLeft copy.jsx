@@ -1,9 +1,11 @@
+import logo_full from '../../../img/logo.png'
+
 export const DashboardLeft = () => {
     return (
         <>
         <div className="dashboard--left">
             <div className="dashboard-logo">
-                <img src={require('../../../img/logo.png')} alt={'icon logo'}/>
+                <img src={logo_full} alt={'icon logo'}/>
             </div>
 
             <div className='pagesWrapper'>

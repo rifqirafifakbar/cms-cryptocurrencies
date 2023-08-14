@@ -1,5 +1,6 @@
 import { CryptoCard } from '../../cards/crypto-card/cryptoCard'
 import { DataTableApp } from '../../molecules/datatable/datatable'
+import image_user from '../../../img/icons/user.png'
 
 export const DashboardRight = props => {
 
@@ -22,7 +23,7 @@ export const DashboardRight = props => {
                     </div>
                     <div className="breadcumb-right">
                         <div className="profile">
-                            <img src={require('../../../img/icons/user.png')} alt={'user'} className='profile_user'/>
+                            <img src={image_user} alt={'user'} className='profile_user'/>
                             <span className="font-16_normal">James</span>
                             <box-icon name='chevron-down' ></box-icon>
                             <box-icon name='bell' type='solid' ></box-icon>
@@ -34,7 +35,7 @@ export const DashboardRight = props => {
 
             </div>
             <div className='profile-section'>
-                <img src={require('../../../img/icons/user.png')} alt={'user'} className='profile_user'/>
+                <img src={image_user} alt={'user'} className='profile_user'/>
                 <div className='profile-description'>
                     <span className='font-16_bold'>James Warden</span>
                     <span className='font-12font-16_bold'>Admin - Company A</span>
