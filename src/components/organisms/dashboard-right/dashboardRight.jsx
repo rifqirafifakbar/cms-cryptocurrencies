@@ -27,7 +27,7 @@ export const DashboardRight = props => {
                         <div className="profile">
                             <Image src={image_user} alt={'user'} className='profile_user'/>
                             <span className="font-16_normal">James</span>
-                            <box-icon name='chevron-down' ></box-icon>
+                            <box-icon name='chevron-down' className="chevron"></box-icon>
                             <box-icon name='bell' type='solid' ></box-icon>
                         </div>
                     </div>

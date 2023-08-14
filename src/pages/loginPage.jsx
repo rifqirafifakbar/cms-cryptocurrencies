@@ -21,6 +21,7 @@ export const LoginPage = () => {
                         </div>
                         <div className='loginWrapper--right-side'>
                             <span className='title-bold'>Sign in</span>
+                            <span className="title-mobile">Lorem ipsum is simply</span>
                             <div className='inputGroup'>
                                 <Input
                                     type="input-email"

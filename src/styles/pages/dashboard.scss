@@ -51,6 +51,19 @@
           width: 25%;
           margin-right: 10px;
           height: 30%;
+
+          @include sm {
+            order: 3;
+          }
+        }
+        
+
+        .font-16_normal {
+          display: block;
+
+          @include sm {
+            display: none;
+          }
         }
 
         span {
@@ -71,6 +84,10 @@
     height: calc(90vh);
     position: relative;
     box-shadow: $box-shadow;
+
+    @include sm {
+      display: none;
+    }
 
     .logo_close {
       display: none;
@@ -314,7 +331,13 @@
     width: calc(100% - 260px);
     transition: all 0.5s ease;
     padding: 25px;
+
+    @include sm {
+      width: 100%;
+    }
   }
+
+
   .sidebar.close ~ .home-section {
     width: calc(100% - 78px);
   }
@@ -386,6 +409,15 @@
     justify-content: space-between;
     margin-bottom: 25px;
 
+    @include sm {
+      flex-wrap: wrap;
+
+      .cryptoWrapper:nth-child(1) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
     .cryptoWrapper {
       border-radius: 15px;
       background-color: white;
@@ -395,6 +427,10 @@
       justify-content: space-between;
       align-items: center;
       box-shadow: $box-shadow;
+
+      @include sm {
+        width: calc((6 / 12) * 100% - 10px);
+      }
 
       .description {
         span {

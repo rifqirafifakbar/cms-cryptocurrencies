@@ -2,12 +2,37 @@
     display: flex;
     justify-content: space-around;
 
+    &--left-side {
+        @include sm {
+            display: none;
+        }
+    }
+
     &--right-side{
         width: calc(20%);
+
+        @include sm {
+            width: calc(100%);
+        }
+
+        .title-mobile{
+            display: none;
+
+            @include sm {
+                display: block;
+                font-weight: 400;
+                margin-bottom: 120px;
+            }
+        }
+
 
         .inputGroup{
             .inputWrapper:nth-child(1) {
                 margin-bottom: 20px;
+
+                @include sm {
+                    margin-bottom: 40px;
+                }
             }
 
             a {
@@ -18,6 +43,10 @@
             }
 
             margin-bottom: 30px;
+
+            @include sm {
+                margin-bottom: 60px;
+            }
         }
 
         .font12-grey {
