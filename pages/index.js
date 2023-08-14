@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Button } from "../src/components/atoms/button/button";
 import { Input } from "../src/components/atoms/input/input";
-import logo_baner from "../public/images/logo.png";
+import logo_baner from "../public/images/logo.PNG";
 import banner_1 from "../public/images/banner_1.PNG";
 import facebook_logo from "../public/images/icons/facebook.PNG";
 import apple_logo from "../public/images/icons/apple.PNG";
