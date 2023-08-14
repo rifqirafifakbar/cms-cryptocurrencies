@@ -7,7 +7,7 @@ export const LoginPage = () => {
         <>
             <div className="container-fluid">
                 <div className="header">
-                    <Image src='/images/logo.png' alt={'icon logo'}/>
+                    <Image src='/images/logo.PNG' alt={'icon logo'}/>
                 </div>
             </div>
 
