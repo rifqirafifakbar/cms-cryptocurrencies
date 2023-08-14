@@ -1,8 +1,8 @@
 // import 'boxicons';
 import { useEffect } from 'react';
 import { Button } from '../../atoms/button/button';
-import logo_full from '../../../images/logo.png'
-import logo_mobile from '../../../images/icon_logo.png'
+import logo_full from '../../../../public/images/logo.png'
+import logo_mobile from '../../../../public/images/icon_logo.png'
 import Image from 'next/image'
 
 export const DashboardLeft = (props) => {

@@ -1,6 +1,6 @@
 import { CryptoCard } from '../../cards/crypto-card/cryptoCard'
 import { DataTableApp } from '../../molecules/datatable/datatable'
-import image_user from '../../../images/icons/user.png'
+import image_user from '../../../../public/images/icons/user.png'
 import Image from 'next/image'
 
 export const DashboardRight = props => {
