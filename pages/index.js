@@ -7,8 +7,25 @@ import banner_1 from "../public/images/banner_1.PNG";
 import facebook_logo from "../public/images/icons/facebook.PNG";
 import apple_logo from "../public/images/icons/apple.PNG";
 import google_logo from "../public/images/icons/google.PNG";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [isval, setIsVal] = useState("");
+  const [isValid, setIsValid] = useState(true);
+
+  const validateEmail = (email) => {
+    const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    return reg.test(email);
+  }
+
+  const handlerChange = (e) => {
+		let email = e.target.value,
+			emailValidate = validateEmail(email);
+    setIsVal(e.target.value)
+    setIsValid(emailValidate || e.target.value.length === 0 ? true : false)
+	}
+
   return (
     <>
       <div className="container-fluid">
@@ -24,26 +41,25 @@ export default function Home() {
             </div>
             <div className="loginWrapper--right-side">
               <span className="title-bold">Sign in</span>
+              <span className="title-mobile">Lorem ipsum is simply</span>
               <div className="inputGroup">
                 <Input
                   type="input-email"
                   name="inputEmail"
                   placeholder="Enter your email"
-                  // value={handlerValue("higherRepayment")}
-                  // onChange={(e) => handlerChangeNumber(e.target.value, e.target.name)}
+                  value={isval}
+                  warningText="Invalid e-mail address"
+                  onChange={(e) => handlerChange(e)}
+                  isRequired={isValid ? false : true}
+                  className={isValid ? false : "required"}
                 />
 
                 <Input
                   type="input-password"
                   name="inputPassword"
                   placeholder="Enter your password"
-                  // value={handlerValue("higherRepayment")}
-                  // onChange={(e) => handlerChangeNumber(e.target.value, e.target.name)}
+                  warningText="Invalid password"
                 />
-
-                <a href="#" className="font12-grey">
-                  Forgot password ?
-                </a>
               </div>
               <Button
                 classProps="btn-login"

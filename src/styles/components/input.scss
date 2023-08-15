@@ -5,6 +5,10 @@ input {
   border: solid 0.05rem $color-grey-border;
   width: 100%;
 
+  &.required {
+    border: solid 0.05rem red;
+  }
+
   font-family: $primaryfont;
   font-size: $font-16;
   &:focus {
@@ -17,7 +21,29 @@ input {
     font-size: $font-16;
   }
 
+
+
   @include sm {
     padding: 25px;
   }
+}
+
+.inputWrapper{
+
+  .passwordWrapper{
+    position: relative;
+
+    .icon {
+      position: absolute;
+      right: 8px;
+      bottom: 25%;
+      cursor: pointer;
+    }
+  }
+
+  .wrapperFPerrorMsg{
+    display: flex;
+    justify-content: space-between;
+  }
+
 }

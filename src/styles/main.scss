@@ -16,6 +16,17 @@
     font-family: $primaryfont;
     font-size: $font-16;
 
+    .danger {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        color: red;
+
+        .text{
+            margin-left: 10px;
+        }
+    }
 
     .font12-grey{
         font-size: $font-12;

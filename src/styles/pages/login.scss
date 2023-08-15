@@ -17,11 +17,11 @@
 
         .title-mobile{
             display: none;
-
             @include sm {
                 display: block;
                 font-weight: 400;
-                margin-bottom: 120px;
+                margin-bottom: 80px;
+                font-size: $font-24;
             }
         }
 

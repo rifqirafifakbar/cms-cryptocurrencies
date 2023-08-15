@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { fetchData } from '../../../services';
 import { InputText } from 'primereact/inputtext';
 import Image from 'next/image'
+import { useStore } from '../../../zustand/store';
 
 export const DataTableApp = (props) => {
     const [products, setProducts] = useState([]);
@@ -31,11 +32,11 @@ export const DataTableApp = (props) => {
 
         _filters['global'].value = value;
 
-        console.log(_filters)
         setFilters(_filters);
         setGlobalFilterValue(value);
     };
 
+    const { isColor } = useStore();
     const renderHeader = () => {
         return (
             <div className="header">
@@ -49,14 +50,13 @@ export const DataTableApp = (props) => {
     };
 
     useEffect(() => {
-        // console.log()
         fetchData().then((data)=> setProducts(data))
     },[])
 
     const header = renderHeader();
 
     return (
-        <div className='table-section'>
+        <div className={`table-section ${isColor}`}>
             <DataTable 
                 value={products} 
                 filters={filters} 
