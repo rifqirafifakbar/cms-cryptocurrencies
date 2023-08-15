@@ -6,11 +6,17 @@ import Image from 'next/image'
 import { ProfileCard } from '../../molecules/cards/profile-card/profileCard'
 import { useState } from 'react'
 import { useStore } from '../../../zustand/store';
+import { useRouter } from 'next/navigation'
 
 export const DashboardRight = props => {
 
     const [isSubMenu, setIsSubMenu] = useState(false);
     const { isColor } = useStore();
+    const router = useRouter();
+
+    const handlerLogout = () => {
+        router.push('/')
+    }
     
     return(
         <section className="home-section">
@@ -68,7 +74,7 @@ export const DashboardRight = props => {
 
                                     <div className='logoutWrapper'>
                                         <box-icon name='log-in' color="red"></box-icon>
-                                        <span>Log Out</span>
+                                        <span onClick={() => handlerLogout()}>Log Out</span>
                                     </div>
                                 </div>
                             </div>

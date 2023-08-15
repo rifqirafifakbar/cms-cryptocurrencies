@@ -70,7 +70,7 @@ export const Input = memo(
         
           <>
             <div className="wrapperFPerrorMsg">
-              <span className="danger"><box-icon size="xs" type='solid' name='error' color="red"></box-icon> <span className="text">{warningText}</span> </span>
+              {isRequired ?  <span className="danger"><box-icon size="xs" type='solid' name='error' color="red"></box-icon> <span className="text">{warningText}</span> </span> : ''}
               <a href='#' className='font12-grey'>Forgot password ?</a>
             </div>
           </>
